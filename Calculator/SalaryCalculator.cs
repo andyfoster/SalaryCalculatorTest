@@ -18,5 +18,11 @@ namespace Calculator
             decimal weeklySalary = hourlyWage * HoursInWeek;
             return weeklySalary;
         }
+
+        public decimal GetHourlyWage(decimal annualWage)
+        {
+            //return 0;
+            return annualWage / HoursInYear;
+        }
     }
 }
