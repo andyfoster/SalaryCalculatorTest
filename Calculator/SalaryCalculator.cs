@@ -4,16 +4,19 @@ namespace Calculator
 {
     public class SalaryCalculator
     {
+        const int HoursInYear = 2080;
+        const int HoursInWeek = 40;
+
         public decimal GetAnnualSalary(decimal hourlyWage)
         {
-            const int HoursInYear = 2080;
             decimal annualSalary = hourlyWage * HoursInYear;
             return annualSalary;
         }
+        
         public decimal GetWeeklySalary(decimal hourlyWage)
         {
-            //const int HoursInWeek = 40;
-            return 0;
+            decimal weeklySalary = hourlyWage * HoursInWeek;
+            return weeklySalary;
         }
     }
 }
