@@ -7,17 +7,9 @@ namespace Calculator
         const int HoursInYear = 2080;
         const int HoursInWeek = 40;
 
-        public decimal GetAnnualSalary(decimal hourlyWage)
-        {
-            decimal annualSalary = hourlyWage * HoursInYear;
-            return annualSalary;
-        }
+        public decimal GetAnnualSalary(decimal hourlyWage) => hourlyWage * HoursInYear;     
         
-        public decimal GetWeeklySalary(decimal hourlyWage)
-        {
-            decimal weeklySalary = hourlyWage * HoursInWeek;
-            return weeklySalary;
-        }
+        public decimal GetWeeklySalary(decimal hourlyWage) => hourlyWage * HoursInWeek;
 
         public decimal GetHourlyWage(decimal annualWage) => annualWage / HoursInYear;
   
