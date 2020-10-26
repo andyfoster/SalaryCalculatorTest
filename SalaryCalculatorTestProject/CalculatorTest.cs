@@ -26,6 +26,7 @@ namespace SalaryCalculatorTestProject
             // Assert
             Assert.AreEqual(104000, annualSalary);
         }
+
         [TestMethod]
         public void WeeklySalaryTest()
         {
