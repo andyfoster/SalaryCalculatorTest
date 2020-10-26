@@ -19,10 +19,7 @@ namespace Calculator
             return weeklySalary;
         }
 
-        public decimal GetHourlyWage(decimal annualWage)
-        {
-            //return 0;
-            return annualWage / HoursInYear;
-        }
+        public decimal GetHourlyWage(decimal annualWage) => annualWage / HoursInYear;
+  
     }
 }
